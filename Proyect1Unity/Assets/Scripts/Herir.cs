@@ -12,7 +12,9 @@ public class Herir : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")) 
         {
-            Debug.Log("PUNTOS DE DAÑO RERALIZADOS" + puntos);
+            Jugador jugador = collision.gameObject.GetComponent<Jugador>();
+            jugador.ModificarVida(-puntos);
+            Debug.Log("PUNTOS DE DAÑO RERALIZADOS  " + puntos);
         }
     }
 }
