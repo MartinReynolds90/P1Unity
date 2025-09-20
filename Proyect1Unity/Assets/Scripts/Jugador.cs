@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Jugador : MonoBehaviour
 {
     [Header("Configuracion")]
     [SerializeField] private float vida = 5f;
+    [SerializeField] private UnityEvent OnDetenerMovimiento; 
 
     public void ModificarVida(float puntos)
     {
         vida += puntos;
         Debug.Log(EstasVivo());
+        if (EstasVivo() == false) {
+            OnDetenerMovimiento.Invoke();
+        }
     }
 
 
@@ -22,7 +27,7 @@ public class Jugador : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.gameObject.CompareTag("Meta")) { return; }
-
+        OnDetenerMovimiento.Invoke();
         Debug.Log("GANASTE");
     }
 }
