@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Mover : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Mover : MonoBehaviour
     // Variable para referenciar otro componente del objeto
     private Rigidbody2D miRigidbody2D;
 
+    public void VelocidadCero() {
+        velocidad = 0f;
+    }
     // Codigo ejecutado cuando el objeto se activa en el nivel
     private void OnEnable()
     {
