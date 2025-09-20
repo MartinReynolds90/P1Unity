@@ -1215,11 +1215,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 206831046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -16.8, y: 7}
-  m_SizeDelta: {x: 19.753906, y: 4.4072876}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1.7000122, y: -2.100006}
+  m_SizeDelta: {x: 300, y: 100}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1211940185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.057849757, b: 0.120474756, a: 0.36078432}
+  m_Color: {r: 0.9809198, g: 1, b: 0.058823526, a: 0.36078432}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1263,7 +1263,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4825564668193119560, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
   m_PrefabInstance: {fileID: 321899251284410995}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1272000262
+--- !u!114 &1272000269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1272,10 +1272,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 219093071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d0c1b80e2583a04784f0b5ad0a970dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 25fe0f35b1c638b49808c610b1450b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoVida: {fileID: 0}
+  puntos: 5
 --- !u!1 &1285624676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,7 +1472,7 @@ GameObject:
   - component: {fileID: 1359612100}
   - component: {fileID: 1359612099}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoVida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1492,11 +1492,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 206831046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 76.32, y: 26.82}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 10.919373, y: -31.599976}
+  m_SizeDelta: {x: 447.4485, y: 50}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1359612099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vidas
+  m_text: vidas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1526,8 +1526,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278650631
+  m_fontColor: {r: 0.028301895, g: 0.027634397, b: 0.027634397, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1544,14 +1544,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3
-  m_fontSizeBase: 3
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1582,7 +1582,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 42.94147, z: 191.59436, w: 3.3512707}
+  m_margin: {x: 629.2561, y: -11.97118, z: 443.1901, w: -200.59624}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1991,7 +1991,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7881749082427197785, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1272000262}
+      addedObject: {fileID: 1272000269}
   m_SourcePrefab: {fileID: 100100000, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
 --- !u!1001 &609343831363759650
 PrefabInstance:
