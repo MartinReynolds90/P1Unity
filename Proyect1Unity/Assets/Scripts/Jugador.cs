@@ -6,21 +6,24 @@ using UnityEngine.Events;
 public class Jugador : MonoBehaviour
 {
     [Header("Configuracion")]
-    [SerializeField] private float vida = 5f;
+    [SerializeField] private int vida = 5;
     [SerializeField] private UnityEvent OnDetenerMovimiento;
     [SerializeField] private UnityEvent<string> OnTextFin;
 
-    public void ModificarVida(float puntos)
+    public void ModificarVida(int puntos)
     {
         vida += puntos;
         Debug.Log(EstasVivo());
+        OnTextFin.Invoke("vid" + vida);
         if (EstasVivo() == false) {
             OnDetenerMovimiento.Invoke();
             OnTextFin.Invoke("GAME OVER");
         }
     }
 
-
+    public int GetVidas() {
+        return vida;
+    } 
     private bool EstasVivo()
     {
         return vida > 0;
