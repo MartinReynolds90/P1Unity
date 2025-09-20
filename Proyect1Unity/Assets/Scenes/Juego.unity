@@ -1263,6 +1263,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4825564668193119560, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
   m_PrefabInstance: {fileID: 321899251284410995}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1272000265 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2800973495368601611, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+  m_PrefabInstance: {fileID: 321899251284410995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219093071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b97ef8a4d692114a9a493d711c9776d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1272000269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1976,6 +1987,34 @@ PrefabInstance:
     - target: {fileID: 4825564668193119560, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272860509568781588, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+      propertyPath: OnDetenerMovimiento.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272860509568781588, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+      propertyPath: OnDetenerMovimiento.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272860509568781588, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+      propertyPath: OnDetenerMovimiento.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1272000265}
+    - target: {fileID: 5272860509568781588, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+      propertyPath: OnDetenerMovimiento.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272860509568781588, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+      propertyPath: OnDetenerMovimiento.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: VelocidadCero
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272860509568781588, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+      propertyPath: OnDetenerMovimiento.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Mover, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272860509568781588, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
+      propertyPath: OnDetenerMovimiento.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7097658663650277794, guid: 3c702bf93070d23459a1050d40fc0422, type: 3}
       propertyPath: fuerzaSalto
