@@ -7,7 +7,8 @@ public class Jugador : MonoBehaviour
 {
     [Header("Configuracion")]
     [SerializeField] private float vida = 5f;
-    [SerializeField] private UnityEvent OnDetenerMovimiento; 
+    [SerializeField] private UnityEvent OnDetenerMovimiento;
+    [SerializeField] private UnityEvent<string> OnTextFin;
 
     public void ModificarVida(float puntos)
     {
@@ -15,6 +16,7 @@ public class Jugador : MonoBehaviour
         Debug.Log(EstasVivo());
         if (EstasVivo() == false) {
             OnDetenerMovimiento.Invoke();
+            OnTextFin.Invoke("GAME OVER");
         }
     }
 
@@ -28,6 +30,7 @@ public class Jugador : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Meta")) { return; }
         OnDetenerMovimiento.Invoke();
+        OnTextFin.Invoke("GANASTE");
         Debug.Log("GANASTE");
     }
 }
